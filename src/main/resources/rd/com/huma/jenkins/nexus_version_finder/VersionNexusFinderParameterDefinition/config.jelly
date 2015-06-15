@@ -1,0 +1,36 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+  	<f:entry title="Name" field="name">
+		<f:textbox />
+  	</f:entry>
+
+	<f:entry title="Description" field="description">
+		<f:textbox />
+  	</f:entry>
+
+    <f:entry title="Group Id" field="groupId">
+  		  <f:textbox value="${groupId}"/>
+  	</f:entry>
+
+    <f:entry title="Artifact id" field="artifactId">
+	    <f:textbox value="${artifactId}" />
+  	</f:entry>
+
+  	<f:entry title="Repository id" field="repositoryId">
+    	<f:textbox default="releases" value="${repositoryId}" />
+  	</f:entry>
+
+  	<f:entry title="Server" field="server">
+    	<f:textbox default="172.16.7.40" value="${server}" />
+  	</f:entry>
+
+    <f:entry title="Port" field="port">
+    	<f:textbox default="8080"  value="${port}" />
+  	</f:entry>
+
+
+   <f:entry title="default version" field="defaultVersion">
+    <f:textbox  value="${defaultVersion}" />
+  </f:entry>
+
+</j:jelly>
